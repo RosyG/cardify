@@ -40,5 +40,9 @@ const nombreDeTuFuncion =(obteniendoElElemento) => {
 > archivo `README.md` :smiley:.
 
 ***
-
-
+## Pseudo código del flujo de trabajo.
+1. Acceder al contenedor por id.
+2. Guardar en un array la información del src y en otro la inf del alt, después de guardar la inf se borraran los hijos del contenedor de la galería.
+3. Hacer que se iteren los arreglos para ir creando y pintando los elementos en el html.
+- Crear una funcion que cree elementos y pasar como parametro el value del indice del arreglo que contiene el src y el alt
+- La función que crea los elementos lo hará por medio de la platilla de texto. En la platilla de texto se concatenará el valor src y alt, para insertarle la información de los atributos: src y alt en los elementos creados.

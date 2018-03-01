@@ -11,19 +11,15 @@ for (let index in arrayGallery) {
 $('#gallery').empty();//Borrando el contenedor una vez que la información anterior ya se encuentra almanecenada en las variables.
 //Esto es para que se puedan escribir los nuevos nodos de esa section.
 //Accediendo al atributos de cada imagen y guardandola en un arreglo.
+let templateString = '';
 for (let content in imagenArray) {
   let altText = imagenArray[content].alt; //Accediendo al atributo alt.
   let srcText = imagenArray[content].currentSrc; //Accediendo al src.
-  let father = document.querySelector('#gallery');
-  father =  `<figure>
-                <img src="${srcText}" alt="${altText}">
-                <figcaption>${altText}</figcaption>
-            </figure>`;
-  console.log(altText);
+  templateString +=  `<figure class="cardify-figure">
+                        <img src="${srcText}" alt="${altText}">
+                        <figcaption class="style-figcaption">${altText}</figcaption>
+                    </figure>`;
   console.log(srcText);
 }
-
-
-/*
-let elementHTML = `<p title="${title}">Hello ${you}!</p>`
-*/
+let father = document.querySelector('#gallery');
+father.innerHTML = templateString;//Añadiendo el templateString al contenedor de la galería.

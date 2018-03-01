@@ -41,7 +41,7 @@ const nombreDeTuFuncion =(obteniendoElElemento) => {
 
 ***
 ## Pseudo código del flujo de trabajo.
-1. Acceder al contenedor por id.
+1. Acceder al contenedor por clase.
 2. Guardar en un array la información del src y en otro la inf del alt, después de guardar la inf se borraran los hijos del contenedor de la galería.
 3. Hacer que se iteren los arreglos para ir creando y pintando los elementos en el html.
 - Crear una funcion que cree elementos y pasar como parametro el value del indice del arreglo que contiene el src y el alt
